@@ -1,17 +1,39 @@
-<DOCCTYPE html>
+<!DOCTYPE html>
 <html>
-<title id="title">My Personal Website</title>
-    <link rel="stylesheet" href="site.css">
 
-<head id="head">
-<h1>Welcome to my site</h1>
+<head>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function doSomething() {
+            alert("Hello World");
+        }
+    </script>
 </head>
-<script>
-	function doSomething() {
-	alert("Hello World");
-}
-</script>
+
 <body>
-<button id="hello" type="button" onclick="doSomething()">Click Me!!! </button>
-</body>
+    <header>
+        <h1>This is my first website</h1>
+        <nav>
+            <ul>
+                <li>Interests</li>
+            </ul>
+        </nav>
+        <img src="Pictures/Andrew.jpg">
+    </header>
+    <section>
+        <!-- PUT MAIN SITE CONTENT HERE -->
+        Hello my name is Andrew Alvarez Welcome to my Website
+    </section>
+
+    <footer>
+        <button type="button" onclick="doSomething()">Click Me</button>
+
+        <!-- PUT SOCIAL MEDIA ICONS HERE -->
+        <div>
+            <a href="https://www.facebook.com/AndrewAlvarez911"> <img src="Pictures/Facebook-icon.png">
+            </a>
+        </div>
+    </footer>
+
 </html>
