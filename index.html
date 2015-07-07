@@ -2,38 +2,69 @@
 <html>
 
 <head>
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function doSomething() {
-            alert("Hello World");
-        }
-    </script>
+    <meta charset="utf-8">
+    <title>Andrew Alvarez | Designer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>This is my first website</h1>
+        <a href="index.html" id="logo">
+            <h1>Andrew Alvarez</h1>
+            <h2>Designer</h2>
+        </a>
         <nav>
             <ul>
-                <li>Interests</li>
+                <li><a href="index.html" class="selected">Portfolio</a>
+                </li>
+                <li><a href="about.html">About</a>
+                </li>
+                <li><a href="contact.html">Contact</a>
+                </li>
             </ul>
         </nav>
-        <img src="Pictures/Andrew.jpg">
     </header>
-    <section>
-        <!-- PUT MAIN SITE CONTENT HERE -->
-        Hello my name is Andrew Alvarez Welcome to my Website
-    </section>
-
-    <footer>
-        <button type="button" onclick="doSomething()">Click Me</button>
-
-        <!-- PUT SOCIAL MEDIA ICONS HERE -->
-        <div>
-            <a href="https://www.facebook.com/AndrewAlvarez911"> <img src="Pictures/Facebook-icon.png">
+    <div class="wrapper">
+        <section>
+            <div class="row">   
+                <div class="col">
+                    <a href="Pictures/Call-of-Duty-Black-Ops-2-Free.jpg">
+                        <img src="Pictures/Call-of-Duty-Black-Ops-2-Free.jpg" alt="">
+                        <p>My favorite Shooting game.</p>
+                    </a>
+                </div>
+                <div class="col">                
+                    <a href="Pictures/MK8.jpg">
+                        <img src="Pictures/MK8.jpg" alt="">
+                        <p>My Favorite Racing Game.</p>
+                    </a>
+                </div>
+            </div>
+             <div class="row">
+                 <div class="col">
+                    <a href="Pictures/selfie.jpg" class="magnific">
+                        <img src="Pictures/selfie.jpg" alt="">
+                        <p>A picture of me with Sunglasses on.</p>
+                    </a>
+                 </div>
+                 <div class="col">
+                    <a href="Pictures/family.jpg" class="magnific">
+                        <img src="Pictures/family.jpg" alt="">
+                        <p>Picture of Me and My Family.</p>
+                    </a>
+                 </div>
+            </div>            
+        </section>
+        <footer>
+            <a href="http://facebook.com/AndrewAlvarez911">
+                <img src="Pictures/Facebook-icon.png" alt="Facebook Logo" class="social-icon" />
             </a>
-        </div>
-    </footer>
+            <p>&copy; 2015 Andrew Alvarez.</p>
+        </footer>
+    </div>
+</body>
 
 </html>
